@@ -1,0 +1,3 @@
+cd djangogirls
+myenv\Scripts\activate
+python manage.py runserver
