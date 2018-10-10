@@ -4,24 +4,29 @@ myenv\Scripts\activate
 python manage.py runserver
 
 (Internet)
-Primeiro, envie seu código para o Github
-command-line
-cd djangogirls
-myenv\Scripts\activate
-$ git status
-[...]
-$ git add --all .
-$ git status
-[...]
-$ git commit -m "Modified templates to display posts from database."
-[...]
-$ git push
-Em seguida, faça login em PythonAnywhere e vá para seu console de Bash (ou comece um novo) e execute:
-PythonAnywhere command-line
-$ cd luisdavidpf.pythonanywhere.com/
-$ git pull
-[...]
-Por fim, vá para a aba Web app setup e clique em Reload em sua aplicação Web. Sua atualização deve ter 
-aparecido! Tudo bem se as postagens em seu site PythonAnywhere não coincidirem com as postagens que aparecem 
-no blog hospedado no seu servidor local. Os bancos de dados em seu computador local e no Python Anywhere 
-não sincronizam com o resto de seus arquivos.
+	Primeiro, envie seu código para o Github
+		command-line
+		cd djangogirls
+		myenv\Scripts\activate
+		$ git status
+		[...]
+		$ git add --all .
+		$ git status
+		[...]
+		$ git commit -m "Modified templates to display posts from database."
+		[...]
+		$ git push
+
+	Em seguida, faça login em PythonAnywhere e vá para seu console de Bash (ou comece um novo) e execute:
+	PythonAnywhere command-line
+		$ cd luisdavidpf.pythonanywhere.com/
+		$ git pull
+		[...]
+		Por fim, vá para a aba Web app setup e clique em Reload em sua aplicação Web. Sua atualização deve ter 
+		aparecido! Tudo bem se as postagens em seu site PythonAnywhere não coincidirem com as postagens que aparecem 
+		no blog hospedado no seu servidor local. Os bancos de dados em seu computador local e no Python Anywhere 
+		não sincronizam com o resto de seus arquivos.
+
+		ou 
+
+		pa_autoconfigure_django.py --nuke https://github.com/LuisDavidPFarias/my-first-blog.git
